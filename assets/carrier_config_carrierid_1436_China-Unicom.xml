@@ -1,4 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <carrier_config>
     <boolean name="allow_emergency_numbers_in_call_log_bool" value="true"/>
+    <!-- Round 71: VoLTE via the open-source ImsStack. volte_available is the
+         master gate (ImsManager turnOnIms); request_ims_pdn_without_mmtel
+         bypasses the A15 DataNetworkController VoPS check that rejects
+         MMTEL-capable IMS requests when the Samsung RIL reports no VoPS;
+         supported_rats limits registration to LTE. -->
+    <boolean name="carrier_volte_available_bool" value="true" />
+    <boolean name="carrier_vt_available_bool" value="true" />
+    <boolean name="ims.request_ims_pdn_without_mmtel_bool" value="true" />
+    <int-array name="ims.supported_rats_int_array" num="1">
+        <item value="3" />
+    </int-array>
 </carrier_config>

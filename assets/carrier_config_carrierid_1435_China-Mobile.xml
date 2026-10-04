@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <carrier_config>
     <boolean name="allow_emergency_numbers_in_call_log_bool" value="true"/>
+    <!-- Round 71: VoLTE via the open-source ImsStack (mirror of Unicom 1436). -->
+    <boolean name="carrier_volte_available_bool" value="true" />
+    <boolean name="carrier_vt_available_bool" value="true" />
+    <boolean name="volte_user_setting_visibility_bool" value="true" />
+    <int-array name="ims.supported_rats_int_array" num="1">
+        <item value="3" />
+    </int-array>
     <boolean name="support_tdscdma_bool" value="true"/>
     <boolean name="allow_add_call_during_video_call" value="false" />
     <boolean name="allow_hold_video_call_bool" value="false" />

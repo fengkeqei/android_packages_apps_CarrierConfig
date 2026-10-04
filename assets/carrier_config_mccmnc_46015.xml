@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<!-- Round 71: China Broadcasting Network (CBN) VoLTE via the open-source ImsStack. -->
+<carrier_config_list>
+    <carrier_config>
+    <!-- Round 71: VoLTE via the open-source ImsStack (mirror of Unicom 1436). -->
+    <boolean name="carrier_volte_available_bool" value="true" />
+    <boolean name="carrier_vt_available_bool" value="true" />
+    <boolean name="volte_user_setting_visibility_bool" value="true" />
+    <int-array name="ims.supported_rats_int_array" num="1">
+        <item value="3" />
+    </int-array>
+    </carrier_config>
+</carrier_config_list>

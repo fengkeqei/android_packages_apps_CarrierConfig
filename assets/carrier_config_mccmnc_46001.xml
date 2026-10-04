@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<!-- Round 71: China Unicom VoLTE enablement for the open-source ImsStack.
+     carrier_volte_available_bool is the master gate (ImsManager turnOnIms);
+     ims.supported_rats limits registration to LTE. -->
+<carrier_config_list>
+    <carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="volte_user_setting_visibility_bool" value="true" />
+        <int-array name="ims.supported_rats_int_array" num="1">
+            <item value="3" />
+        </int-array>
+    </carrier_config>
+</carrier_config_list>
